@@ -1593,3 +1593,213 @@ margin-bottom:6px;
 .product-card:hover img {
     transform: scale(1.06);
 }
+
+/* =====================================
+   NPN MOBILE RESPONSIVE DESIGN
+   Add this at the bottom of style.css
+===================================== */
+
+/* Prevent horizontal scrolling */
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+img, video {
+    max-width: 100%;
+}
+
+/* Tablet and Mobile */
+@media screen and (max-width: 768px) {
+
+    /* Header */
+    header {
+        width: 100%;
+        padding: 15px 18px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 15px;
+        box-sizing: border-box;
+    }
+
+    .logo-img {
+        width: 125px;
+        height: auto;
+    }
+
+    header nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    header nav a {
+        font-size: 14px;
+        text-decoration: none;
+    }
+
+    .cta {
+        font-size: 14px;
+        padding: 10px 15px;
+        white-space: nowrap;
+    }
+
+    /* Hero Section */
+    .hero {
+        width: 100%;
+        padding: 45px 20px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 35px;
+    }
+
+    .hero-text {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .hero-text h1 {
+        font-size: clamp(32px, 8vw, 44px);
+        line-height: 1.2;
+        overflow-wrap: break-word;
+        margin-bottom: 20px;
+    }
+
+    .hero-text p {
+        font-size: 17px;
+        line-height: 1.6;
+    }
+
+    .hero-btn {
+        display: inline-block;
+        margin-top: 15px;
+    }
+
+    /* Hero Video */
+    .hero-video {
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    .hero-video video {
+        width: 100%;
+        height: auto;
+        max-height: 350px;
+        object-fit: cover;
+        border-radius: 15px;
+    }
+
+    .hero-video h2 {
+        font-size: 24px;
+    }
+
+    .hero-video p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    /* Featured Products */
+    .products {
+        width: 100%;
+        padding: 35px 18px;
+        box-sizing: border-box;
+    }
+
+    .products > h2 {
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .product-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 25px;
+        width: 100%;
+    }
+
+    .product-card {
+        width: 100%;
+        max-width: 430px;
+        margin: 0 auto;
+        padding: 25px 18px;
+        box-sizing: border-box;
+        border-radius: 20px;
+    }
+
+    .product-card img {
+        width: 100%;
+        max-width: 280px;
+        height: 280px;
+        object-fit: contain;
+        display: block;
+        margin: 0 auto 18px;
+    }
+
+    .product-card h3 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .product-card p {
+        font-size: 16px;
+        line-height: 1.5;
+        text-align: center;
+    }
+
+    .product-btn {
+        display: inline-block;
+        margin: 15px auto 0;
+    }
+}
+
+/* Small Mobile Screens */
+@media screen and (max-width: 480px) {
+
+    header {
+        justify-content: center;
+    }
+
+    header nav {
+        width: 100%;
+        gap: 15px;
+    }
+
+    header nav a {
+        font-size: 13px;
+    }
+
+    .logo-img {
+        width: 110px;
+    }
+
+    .hero {
+        padding: 35px 16px;
+    }
+
+    .hero-text h1 {
+        font-size: 34px;
+    }
+
+    .products > h2 {
+        font-size: 27px;
+    }
+
+    .product-card {
+        padding: 20px 15px;
+    }
+
+    .product-card img {
+        max-width: 240px;
+        height: 240px;
+    }
+}
+
